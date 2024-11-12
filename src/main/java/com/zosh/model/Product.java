@@ -15,6 +15,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Builder
 public class Product {
 
     @Id
@@ -25,15 +26,15 @@ public class Product {
 
     private String description;
 
-    private String price;
+    private int price;
 
     @Column(name = "discounted_price")
-    private String discountedPrice;
+    private int discountedPrice;
 
     @Column(name = "discount_persent")
-    private String discountPersent;
+    private int discountPersent;
 
-    private String quantity;
+    private int quantity;
 
     private String brand;
 
